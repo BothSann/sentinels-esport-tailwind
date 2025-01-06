@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SENTINELS ESPORTS</title>
+    <link rel="icon" href="src/images/logo.png" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script derfer src="script.js"></script>
+  </head>
+  <body class="bg-black text-white">
+    <!-- Navigation -->
+    <!-- Updated Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold">SENTINELS</div>
+
+          <!-- Mobile Menu Button -->
+          <button id="menuBtn" class="md:hidden text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8 uppercase">
+            <a
+              href="#about"
+              class="hover:text-red-500 transition-colors duration-300"
+              >About</a
+            >
+            <a
+              href="#gallery"
+              class="hover:text-red-500 transition-colors duration-300"
+              >Gallery</a
+            >
+            <a
+              href="#news"
+              class="hover:text-red-500 transition-colors duration-300"
+              >News</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-red-500 transition-colors duration-300"
+              >Contact</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-4">
+            <a
+              href="#about"
+              class="hover:text-red-500 transition-colors duration-300"
+              >About</a
+            >
+            <a
+              href="#gallery"
+              class="hover:text-red-500 transition-colors duration-300"
+              >Gallery</a
+            >
+            <a
+              href="#news"
+              class="hover:text-red-500 transition-colors duration-300"
+              >News</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-red-500 transition-colors duration-300"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Social Icons -->
+    <div
+      class="fixed left-0 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-80 backdrop-blur p-4 rounded-r-lg z-40 hidden"
+    >
+      <div class="flex flex-col space-y-6">
+        <a
+          href="#"
+          class="text-white hover:text-red-500 transition-colors duration-300"
+          ><i class="fab fa-twitter fa-lg"></i
+        ></a>
+        <a
+          href="#"
+          class="text-white hover:text-red-500 transition-colors duration-300"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a>
+        <a
+          href="#"
+          class="text-white hover:text-red-500 transition-colors duration-300"
+          ><i class="fab fa-youtube fa-lg"></i
+        ></a>
+        <a
+          href="#"
+          class="text-white hover:text-red-500 transition-colors duration-300"
+          ><i class="fab fa-twitch fa-lg"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen flex items-center justify-center bg-black"
+    >
+      <div class="absolute inset-0">
+        <img
+          src="src/images/championship-ready.jpeg"
+          alt="Hero Background"
+          class="w-full h-full object-cover opacity-40"
+        />
+      </div>
+
+      <div class="flex flex-col gap-2 relative text-center px-4">
+        <h1
+          class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-wider"
+        >
+          WELCOME TO
+        </h1>
+        <h2
+          class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-red-500"
+        >
+          SENTINELS ESPORTS
+        </h2>
+        <div class="flex justify-center mt-4">
+          <i class="fas fa-chevron-down text-3xl animate-bounce"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-20 md:py-24 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center">
+          ABOUT US
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div class="w-[600px] h-[400px]">
+            <img
+              src="src/images/about.jpeg"
+              alt="Team Photo"
+              class="rounded-lg shadow-lg w-full"
+            />
+          </div>
+          <div class="space-y-4 sm:space-y-6">
+            <p class="text-base sm:text-lg">
+              Valorant Esports is a professional gaming organization committed
+              to excellence in competitive gaming. Founded in 2024, we've
+              quickly risen to become one of the most respected names in
+              esports.
+            </p>
+            <p class="text-base sm:text-lg">
+              Our team consists of world-class players competing in major titles
+              across multiple platforms. We believe in fostering talent and
+              creating an environment where players can reach their full
+              potential.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 sm:py-20 md:py-24">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center">
+          PLAYERS
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="group overflow-hidden rounded-lg">
+            <img
+              src="src/images/tenz.jpg"
+              alt="Gallery Image 1"
+              class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="group overflow-hidden rounded-lg">
+            <img
+              src="src/images/zekken.jpg"
+              alt="Gallery Image 2"
+              class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="group overflow-hidden rounded-lg">
+            <img
+              src="src/images/johnqt.jpg"
+              alt="Gallery Image 3"
+              class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="group overflow-hidden rounded-lg">
+            <img
+              src="src/images/sacy.jpg"
+              alt="Gallery Image 4"
+              class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="group overflow-hidden rounded-lg">
+            <img
+              src="src/images/zellsis.jpg"
+              alt="Gallery Image 5"
+              class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="group overflow-hidden rounded-lg">
+            <img
+              src="src/images/reduxx.png"
+              alt="Gallery Image 6"
+              class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-16 sm:py-20 md:py-24 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center">
+          LATEST NEWS
+        </h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-black rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-2"
+          >
+            <img
+              src="src/images/vct-2024-masters-madrid.jpg"
+              alt="News 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 uppercase">
+                VCT 2024: Masters Madrid
+              </h3>
+              <p class="text-gray-400">
+                Our team secured another major victory at the recent
+                championship...
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 text-red-500 hover:text-red-400"
+              >
+                Read More →
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-black rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-2"
+          >
+            <img
+              src="src/images/vct-2021-stage-2-masters-reykjavik.jpg"
+              alt="News 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">
+                VCT 2021: Stage 2 Masters - Reykjavík
+              </h3>
+              <p class="text-gray-400">
+                We're excited to announce the newest addition to our roster...
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 text-red-500 hover:text-red-400"
+              >
+                Read More →
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-black rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-2"
+          >
+            <img
+              src="src/images/valorant-champions-tour-2024-americas-kickoff.jpeg"
+              alt="News 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">
+                VALORANT Champions Tour 2024: Americas Kickoff
+              </h3>
+              <p class="text-gray-400">
+                Get ready for the biggest tournament of the year...
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 text-red-500 hover:text-red-400"
+              >
+                Read More →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-20 md:py-24">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center">
+          CONTACT US
+        </h2>
+        <div class="max-w-2xl mx-auto">
+          <form class="space-y-6">
+            <div>
+              <input
+                type="text"
+                placeholder="Name"
+                class="w-full p-3 bg-gray-900 rounded-lg focus:ring-2 focus:ring-red-500 outline-none"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Email"
+                class="w-full p-3 bg-gray-900 rounded-lg focus:ring-2 focus:ring-red-500 outline-none"
+              />
+            </div>
+            <div>
+              <textarea
+                placeholder="Message"
+                rows="4"
+                class="w-full p-3 bg-gray-900 rounded-lg focus:ring-2 focus:ring-red-500 outline-none"
+              ></textarea>
+            </div>
+            <button
+              class="w-full bg-red-500 text-white py-3 rounded-lg hover:bg-red-600 transition-colors duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+      <div class="container mx-auto px-4 text-center">
+        <div class="flex justify-center space-x-6 mb-8">
+          <a
+            href="#"
+            class="text-white hover:text-red-500 transition-colors duration-300"
+          >
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white hover:text-red-500 transition-colors duration-300"
+          >
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white hover:text-red-500 transition-colors duration-300"
+          >
+            <i class="fab fa-youtube fa-lg"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white hover:text-red-500 transition-colors duration-300"
+          >
+            <i class="fab fa-twitch fa-lg"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white hover:text-red-500 transition-colors duration-300"
+          >
+            <i class="fas fa-envelope fa-lg"></i>
+          </a>
+        </div>
+        <p class="text-gray-400">
+          © 2025 Thann Sopheakboth. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
